@@ -1,1 +1,1 @@
-"""Route-level modules for the grocery shop backend."""
+"""Route-level modules for the Cashwise backend."""

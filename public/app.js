@@ -43,16 +43,4 @@ async function loadDashboard() {
   }
 }
 
-async function loadAccountName() {
-  try {
-    const response = await fetch('/auth/me');
-    if (response.status === 401) return;
-    const account = await response.json();
-    document.querySelector('.brand').textContent = account.store_name;
-  } catch (error) {
-    // Dashboard errors remain visible; the navigation can still be used.
-  }
-}
-
-loadAccountName();
 loadDashboard();

@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
-app.get('/api/health', (req, res) => res.json({ name: 'Sunanda Stores API', status: 'ok' }));
+app.get('/api/health', (req, res) => res.json({ name: 'Cashwise API', status: 'ok' }));
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapiDocument));
 app.get('/openapi.json', (req, res) => res.json(openapiDocument));
 app.use('/auth', authRouter);
@@ -62,7 +62,7 @@ app.use((error, req, res, next) => {
 
 const port = process.env.PORT || 3000;
 if (require.main === module) {
-  app.listen(port, () => console.log(`Sunanda Stores API listening on port ${port}`));
+  app.listen(port, () => console.log(`Cashwise API listening on port ${port}`));
 }
 
 module.exports = app;

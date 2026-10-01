@@ -1,3 +1,3 @@
-APP_NAME = "Grocery Shop"
+APP_NAME = "Cashwise"
 DISCOUNT_THRESHOLD = 30
 DISCOUNT_RATE = 0.10

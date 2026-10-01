@@ -58,8 +58,16 @@ tbody tr:last-child td { border-bottom: 0; }
 .confirmation-card { margin-top: 18px; padding: 22px; }
 .confirmation-heading { display: flex; align-items: center; gap: 9px; color: var(--sage-ink); font-weight: 600; }
 .supplier-list { display: grid; gap: 10px; }
-.supplier-row { display: flex; align-items: center; gap: 15px; padding: 18px 20px; }
+.supplier-row { display: flex; align-items: center; gap: 15px; padding: 0 12px 0 20px; }
 .supplier-row:hover { border-color: var(--sage); }
+.supplier-link { display: flex; align-items: center; flex: 1; gap: 15px; min-width: 0; padding: 18px 0; }
+.delete-icon { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; color: var(--muted); background: transparent; border: 0; border-radius: 8px; }
+.delete-icon:hover { color: var(--peach-ink); background: var(--peach); }
+.delete-icon:disabled { cursor: wait; opacity: .55; }
+.add-form { display: grid; gap: 16px; max-width: 520px; padding: 20px; }
+.form-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.inventory-add { margin: 18px 20px; }
+.inventory-add-form { margin: 0 20px 20px; }
 .avatar { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 42px; width: 42px; height: 42px; color: var(--lavender-ink); background: var(--lavender); border-radius: 50%; font-weight: 600; }
 .supplier-copy { display: grid; gap: 3px; }
 .supplier-name { font-weight: 600; }

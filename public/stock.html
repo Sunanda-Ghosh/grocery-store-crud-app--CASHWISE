@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock | Sunanda Stores</title>
+  <title>Stock</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/operations.css">
 </head>
 <body><div class="page-shell">
-  <header class="topbar"><a class="brand" href="/">Sunanda Stores</a><nav class="screen-nav"><a href="/sale.html">New sale</a><a href="/purchase.html">New purchase</a><a href="/suppliers.html">Suppliers</a><a class="back-link" href="/">Home</a></nav></header>
+  <header class="topbar"><a class="brand" href="/">Loading store...</a><nav class="screen-nav"><a href="/sale.html">New sale</a><a href="/purchase.html">New purchase</a><a href="/suppliers.html">Suppliers</a><a class="back-link" href="/">Home</a></nav></header>
   <main><div class="page-heading"><div><p class="eyebrow">Store room</p><h1>Stock</h1><p class="intro">Keep an eye on what is ready to sell and what is on its way in.</p></div><a class="primary-button" href="/purchase.html"><i class="icon" data-lucide="truck"></i> New purchase</a></div>
     <p id="stock-message" class="message" hidden></p>
     <div class="toggle-row" role="tablist"><button class="toggle-button active" data-view="inventory" type="button">Inventory</button><button class="toggle-button" data-view="history" type="button">Purchase history</button></div>
-    <section id="inventory-view" class="card table-card"><table><thead><tr><th>Product</th><th>Price</th><th>In stock</th><th>Reorder level</th></tr></thead><tbody id="inventory-body"><tr><td colspan="4"><div class="loading-bar"></div></td></tr></tbody></table></section>
+    <section id="inventory-view" class="card table-card"><table><thead><tr><th>Product</th><th>Price</th><th>In stock</th><th>Reorder level</th><th></th></tr></thead><tbody id="inventory-body"><tr><td colspan="5"><div class="loading-bar"></div></td></tr></tbody></table><button id="add-product" class="add-button inventory-add" type="button">+ Add product</button><form id="product-form" class="add-form inventory-add-form" hidden><div class="form-grid"><label class="field">Name<input class="form-input" name="name" required></label><label class="field">Category<input class="form-input" name="category" required></label><label class="field">Unit price<input class="form-input" name="unit_price" type="number" min="0" step="0.01" required></label><label class="field">Unit<input class="form-input" name="unit" required></label><label class="field">Reorder level<input class="form-input" name="reorder_level" type="number" min="0" step="1" value="0" required></label><label class="field">In stock<input class="form-input" name="stock_on_hand" type="number" min="0" step="1" value="0"></label></div><div class="form-actions"><button class="primary-button" type="submit">Create product</button><button id="cancel-product" class="secondary-button" type="button">Cancel</button></div></form></section>
     <section id="history-view" class="card table-card" hidden><table><thead><tr><th>Date</th><th>Supplier</th><th>Amount</th></tr></thead><tbody id="history-body"></tbody></table></section>
   </main>
 </div><script src="https://unpkg.com/lucide@latest"></script><script src="/guard.js"></script><script src="/stock.js"></script></body></html>

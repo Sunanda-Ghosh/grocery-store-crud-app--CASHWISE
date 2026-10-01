@@ -1,7 +1,7 @@
 module.exports = {
   openapi: '3.0.3',
   info: {
-    title: 'Sunanda Stores API',
+    title: 'CashWise API',
     version: '1.0.0',
     description: 'Sales, purchases, credit sales, and credit payment endpoints.',
   },

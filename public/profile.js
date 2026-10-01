@@ -10,7 +10,6 @@ async function loadProfile() {
     if (!response.ok) throw new Error(data.error || 'Profile could not be loaded.');
     document.querySelector('#profile-store').textContent = data.store_name;
     document.querySelector('#profile-email').textContent = data.email;
-    document.querySelectorAll('.brand').forEach((brand) => { brand.textContent = data.store_name; });
   } catch (error) { const element = document.querySelector('#profile-error'); element.hidden = false; element.textContent = error.message; }
 }
 document.querySelector('#logout').addEventListener('click', async () => {

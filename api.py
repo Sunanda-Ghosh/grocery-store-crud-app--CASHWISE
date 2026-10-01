@@ -16,7 +16,7 @@ from routes.products import add_product, get_products
 from routes.supplier import create_supplier, get_suppliers, record_purchase
 from routes.triggers import verify_triggers
 
-app = FastAPI(title="Sunanda Stores API", version="1.0.0")
+app = FastAPI(title="Cashwise API", version="1.0.0")
 
 
 class CustomerInput(BaseModel):
@@ -91,7 +91,7 @@ def _price_items(items: list[SaleItem], use_current_prices=True):
 
 @app.get("/", tags=["health"])
 def root():
-    return {"name": "Sunanda Stores API", "status": "ok"}
+    return {"name": "Cashwise API", "status": "ok"}
 
 
 @app.get("/health", tags=["health"])

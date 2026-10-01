@@ -6,8 +6,11 @@
       return;
     }
     if (!response.ok) return;
-    const account = await response.json();
-    document.querySelectorAll('.brand').forEach((brand) => { brand.textContent = account.store_name; });
+    const data = await response.json();
+    document.querySelectorAll('.brand').forEach((brand) => {
+      brand.textContent = data.store_name;
+      brand.setAttribute('aria-label', `${data.store_name} home`);
+    });
   } catch (error) {
     // Individual screens display their own request errors.
   }
