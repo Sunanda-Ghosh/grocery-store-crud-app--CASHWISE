@@ -11,6 +11,8 @@ const productsRouter = require('./routes/products');
 const suppliersRouter = require('./routes/suppliers');
 const purchaseHistoryRouter = require('./routes/purchaseHistory');
 const authRouter = require('./routes/auth');
+const profileRouter = require('./routes/profile');
+const passwordResetRouter = require('./routes/passwordReset');
 const { requireAuth } = require('./middleware/auth');
 const path = require('path');
 
@@ -24,6 +26,8 @@ app.get('/api/health', (req, res) => res.json({ name: 'Cashwise API', status: 'o
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapiDocument));
 app.get('/openapi.json', (req, res) => res.json(openapiDocument));
 app.use('/auth', authRouter);
+app.use('/', passwordResetRouter);
+app.use('/', profileRouter);
 
 const protectedRoutes = express.Router();
 protectedRoutes.use(requireAuth);

@@ -14,8 +14,23 @@
     "cookie-parser": "^1.4.7",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-rate-limit": "^8.7.0",
     "jsonwebtoken": "^9.0.3",
+    "nodemailer": "^10.0.13",
     "pg": "^8.13.1",
     "swagger-ui-express": "^5.0.1"
-  }
+  },
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunanda-Ghosh/grocery-store-crud-app--CASHWISE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sunanda-Ghosh/grocery-store-crud-app--CASHWISE/issues"
+  },
+  "homepage": "https://github.com/Sunanda-Ghosh/grocery-store-crud-app--CASHWISE#readme"
 }

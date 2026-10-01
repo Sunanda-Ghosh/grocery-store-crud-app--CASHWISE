@@ -15,6 +15,7 @@ button { min-height: 50px; color: var(--sage-ink); background: var(--sage); bord
 button:disabled { cursor: wait; opacity: .6; }
 .message { margin: 0 0 16px; padding: 12px 14px; border-radius: 9px; }
 .error { color: var(--peach-ink); background: var(--peach); }
+.success { color: var(--sage-ink); background: var(--sage); }
 .auth-link { margin: 20px 0 0; color: var(--muted); text-align: center; }
 .auth-link a { color: var(--sage-ink); font-weight: 600; }
 [hidden] { display: none !important; }

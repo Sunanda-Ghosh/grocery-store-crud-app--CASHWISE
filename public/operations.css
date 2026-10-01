@@ -74,6 +74,11 @@ tbody tr:last-child td { border-bottom: 0; }
 .detail-card { padding: 25px; margin-bottom: 18px; }
 .detail-card h2 { margin: 0 0 7px; font-size: 1.6rem; }
 .detail-card p { margin: 0; color: var(--muted); }
+.profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.profile-panel { padding: 25px; }
+.profile-panel h2 { margin: 0 0 20px; font-size: 1.35rem; }
+.profile-form { display: grid; gap: 16px; }
+.profile-form .primary-button { justify-self: start; margin-top: 3px; }
 .section-label { margin: 24px 0 12px; font-weight: 600; }
 @keyframes pulse { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 @media (max-width: 760px) {
@@ -85,4 +90,5 @@ tbody tr:last-child td { border-bottom: 0; }
   .form-grid { grid-template-columns: 1fr; }
   .purchase-row { grid-template-columns: minmax(0, 1fr) 84px 92px 90px 30px; gap: 7px; }
   .new-product-fields { grid-template-columns: 1fr; }
+  .profile-grid { grid-template-columns: 1fr; }
 }
